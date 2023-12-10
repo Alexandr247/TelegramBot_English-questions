@@ -1,5 +1,0 @@
-First name: Alexandr
- Last name: P.
-  Username: @alexandr112233
-     Wrote: /write_creator
-
