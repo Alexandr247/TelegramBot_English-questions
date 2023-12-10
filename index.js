@@ -13,7 +13,7 @@ console.log('I\'m started - English-questions_TelegramBot');
 
 bot.api.setMyCommands([
     { command: '/start', description: 'запустить бот' },
-    { command: '/write_creator', description: 'написать создателю бота' }
+    // { command: '/write_creator', description: 'написать создателю бота' }
 ]);
 
 bot.command('start', async (ctx) => {
@@ -55,125 +55,127 @@ bot.command('start', async (ctx) => {
     });
 });
 
-let waitingWrite = false;
-bot.command('write_creator', async (ctx) => {
+// let waitingWrite = false;
+// bot.command('write_creator', async (ctx) => {
 
-    await ctx.reply('📞<b>Слушаю тебя</b>📞\n\nНапиши что ты хочешь, и я это увижу🤩', {
-        parse_mode: 'HTML',
-    })
-    waitingWrite = true;
+//     await ctx.reply('📞<b>Слушаю тебя</b>📞\n\nНапиши что ты хочешь, и я это увижу🤩', {
+//         parse_mode: 'HTML',
+//     })
+//     waitingWrite = true;
 
-})
+// })
 
-bot.on('message', async (ctx) => {
+// bot.on('message', async (ctx) => {
 
-    if (waitingWrite && ctx.update.message.text) {
+//     if (waitingWrite && ctx.update.message.text) {
 
-        const user_write_creator_file = './src/users/user_write_creator_file.txt'
+//         const user_write_creator_file = './src/users/user_write_creator_file.txt'
 
-        const userWrite =
-            `First name: ${ctx.msg.from.first_name}\n` +
-            ` Last name: ${ctx.msg.from.last_name}\n` +
-            `  Username: @${ctx.msg.from.username}\n` +
-            `     Wrote: ${ctx.msg.text}\n\n`;
+//         const userWrite =
+//             `First name: ${ctx.msg.from.first_name}\n` +
+//             ` Last name: ${ctx.msg.from.last_name}\n` +
+//             `  Username: @${ctx.msg.from.username}\n` +
+//             `     Wrote: ${ctx.msg.text}\n\n`;
 
-        fs.appendFile(user_write_creator_file, userWrite, (err) => {
-            if (err) {
-                console.log('№2 -> ❌ Ошибка во время записи данных в файл ❌: ', err)
-            } else {
-                console.log('№2 -> ✅ Даныне записались в файл ✅')
-            }
-        })
+//         fs.appendFile(user_write_creator_file, userWrite, (err) => {
+//             if (err) {
+//                 console.log('№2 -> ❌ Ошибка во время записи данных в файл ❌: ', err)
+//             } else {
+//                 console.log('№2 -> ✅ Даныне записались в файл ✅')
+//             }
+//         })
 
-        waitingWrite = false;
+//         waitingWrite = false;
 
-        await ctx.reply('✅<b>Принято</b>✅\n\nСоздатель прочитае твоё сообщение🤗', {
-            parse_mode: 'HTML',
-        })
+//         await ctx.reply('✅<b>Принято</b>✅\n\nСоздатель прочитае твоё сообщение🤗', {
+//             parse_mode: 'HTML',
+//         })
 
-    } else {
-        await ctx.reply('✖️<b>Ошибка</b>✖️\n\nТы можешь отправлять только текст😥', {
-            parse_mode: 'HTML',
-        })
-    }
+//     }
+//     if (waitingWrite && !ctx.update.message.text) {
+//         waitingWrite = false;
+//         await ctx.reply('✖️<b>Ошибка</b>✖️\n\nТы можешь отправлять только текст😥', {
+//             parse_mode: 'HTML',
+//         })
+//     }
 
-})
+// })
 
-bot.hears('Я Алеся', async (ctx) => {
-    await ctx.replyWithSticker('https://media.stickerswiki.app/lovetotalsigilo/128307.160.webp');
-    await ctx.reply('❤️❤️❤️');
+// bot.hears('Я Алеся', async (ctx) => {
+//     await ctx.replyWithSticker('https://media.stickerswiki.app/lovetotalsigilo/128307.160.webp');
+//     await ctx.reply('❤️❤️❤️');
 
-    await setTimeout(() => {
-        ctx.reply('У меня тут есть для тебя письмо...');
-        console.log('1')
-    }, 4000);
+//     await setTimeout(() => {
+//         ctx.reply('У меня тут есть для тебя письмо...');
+//         console.log('1')
+//     }, 4000);
 
-    await setTimeout(() => {
-        ctx.reply('Тааак... чичас, надо достать');
-        console.log('2')
-    }, 6000);
+//     await setTimeout(() => {
+//         ctx.reply('Тааак... чичас, надо достать');
+//         console.log('2')
+//     }, 6000);
 
-    await setTimeout(() => {
-        ctx.reply('Чичас чичас, я почти...');
-        console.log('3')
-    }, 10000);
+//     await setTimeout(() => {
+//         ctx.reply('Чичас чичас, я почти...');
+//         console.log('3')
+//     }, 10000);
 
-    await setTimeout(() => {
-        ctx.reply('Ох и глубоко оно...');
-        console.log('4')
-    }, 14000);
+//     await setTimeout(() => {
+//         ctx.reply('Ох и глубоко оно...');
+//         console.log('4')
+//     }, 14000);
 
-    await setTimeout(() => {
-        ctx.reply('Это всё потому что я достаю его из своего сердечка');
-        console.log('5')
-    }, 16000);
+//     await setTimeout(() => {
+//         ctx.reply('Это всё потому что я достаю его из своего сердечка');
+//         console.log('5')
+//     }, 16000);
 
-    await setTimeout(() => {
-        ctx.reply('А письмо для тебя, у меня глубоко глубоко внутри');
-        console.log('6')
-    }, 18000);
+//     await setTimeout(() => {
+//         ctx.reply('А письмо для тебя, у меня глубоко глубоко внутри');
+//         console.log('6')
+//     }, 18000);
 
-    await setTimeout(() => {
-        ctx.reply('Оооо! ДОСТАЛ!!!');
-        console.log('7')
-    }, 22000);
+//     await setTimeout(() => {
+//         ctx.reply('Оооо! ДОСТАЛ!!!');
+//         console.log('7')
+//     }, 22000);
 
-    await setTimeout(() => {
-        ctx.reply('Так... читаю...');
-        console.log('8')
-    }, 24000);
+//     await setTimeout(() => {
+//         ctx.reply('Так... читаю...');
+//         console.log('8')
+//     }, 24000);
 
-    await setTimeout(() => {
-        ctx.reply('Мг мг... мг мг..');
-        console.log('9')
-    }, 26000);
+//     await setTimeout(() => {
+//         ctx.reply('Мг мг... мг мг..');
+//         console.log('9')
+//     }, 26000);
 
-    await setTimeout(() => {
-        ctx.reply('Это точно тебе!!!');
-        console.log('10')
-    }, 30000);
+//     await setTimeout(() => {
+//         ctx.reply('Это точно тебе!!!');
+//         console.log('10')
+//     }, 30000);
 
-    await setTimeout(() => {
-        ctx.reply('На главной странице написано - «Для лучшей Жены на свете»');
-        console.log('11')
-    }, 32000);
+//     await setTimeout(() => {
+//         ctx.reply('На главной странице написано - «Для лучшей Жены на свете»');
+//         console.log('11')
+//     }, 32000);
 
-    await setTimeout(() => {
-        ctx.reply('❤️❤️❤️❤️❤️❤️');
-        console.log('12')
-    }, 40500);
+//     await setTimeout(() => {
+//         ctx.reply('❤️❤️❤️❤️❤️❤️');
+//         console.log('12')
+//     }, 40500);
 
-    await setTimeout(() => {
-        ctx.reply('❤️Я ТЕБЯ ЛЮБЛЮ❤️');
-        console.log('13')
-    }, 41000);
+//     await setTimeout(() => {
+//         ctx.reply('❤️Я ТЕБЯ ЛЮБЛЮ❤️');
+//         console.log('13')
+//     }, 41000);
 
-    await setTimeout(() => {
-        ctx.reply('❤️❤️❤️❤️❤️❤️');
-        console.log('14')
-    }, 41500);
+//     await setTimeout(() => {
+//         ctx.reply('❤️❤️❤️❤️❤️❤️');
+//         console.log('14')
+//     }, 41500);
 
-})
+// })
 
 bot.hears(['🐻Животные🐰', '❓Вопросы❔', '👆Местоимения👇', '📘Другие слова📕', '🎲Случайный вопрос🎲'], async (ctx) => {
 
@@ -276,7 +278,6 @@ bot.on('callback_query:data', async (ctx) => {
 
     await ctx.reply(`Неверно ❌ Правильный ответ: ${answer}`);
     await ctx.answerCallbackQuery();
-
 });
 
 bot.catch((err) => {
