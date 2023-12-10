@@ -1,0 +1,670 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "text": "Как переводится: froghopper ?",
+      "hasOptions": false,
+      "answer": "кузнечик"
+    },
+    {
+      "id": 2,
+      "text": "Как переводится: rhinoceros ?",
+      "hasOptions": false,
+      "answer": "носорог"
+    },
+    {
+      "id": 3,
+      "text": "Как переводится: turtle ?",
+      "hasOptions": false,
+      "answer": "черепаха"
+    },
+    {
+      "id": 4,
+      "text": "Как переводится: lizard ?",
+      "hasOptions": false,
+      "answer": "ящерица"
+    },
+    {
+      "id": 5,
+      "text": "Как переводится: gecko ?",
+      "hasOptions": false,
+      "answer": "геккон"
+    },
+    {
+      "id": 6,
+      "text": "Как переводится: newt ?",
+      "hasOptions": false,
+      "answer": "тритон"
+    },
+    {
+      "id": 7,
+      "text": "Как переводится: toad ?",
+      "hasOptions": false,
+      "answer": "жаба"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "text": "Как переводится: when ?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "почему ", "isCorrect": false },
+        { "id": 2, "text": "когда", "isCorrect": true },
+        { "id": 3, "text": "что", "isCorrect": false },
+        { "id": 4, "text": "как", "isCorrect": false },
+        { "id": 5, "text": "где", "isCorrect": false },
+        { "id": 6, "text": "кто", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Как переводится: why ?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "почему ", "isCorrect": true },
+        { "id": 2, "text": "когда", "isCorrect": false },
+        { "id": 3, "text": "что", "isCorrect": false },
+        { "id": 4, "text": "как", "isCorrect": false },
+        { "id": 5, "text": "где", "isCorrect": false },
+        { "id": 6, "text": "кто", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Как переводится: what ?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "почему ", "isCorrect": false },
+        { "id": 2, "text": "когда", "isCorrect": false },
+        { "id": 3, "text": "что", "isCorrect": true },
+        { "id": 4, "text": "как", "isCorrect": false },
+        { "id": 5, "text": "где", "isCorrect": false },
+        { "id": 6, "text": "кто", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Как переводится: how ?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "почему ", "isCorrect": false },
+        { "id": 2, "text": "когда", "isCorrect": false },
+        { "id": 3, "text": "что", "isCorrect": false },
+        { "id": 4, "text": "как", "isCorrect": true },
+        { "id": 5, "text": "где", "isCorrect": false },
+        { "id": 6, "text": "кто", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Как переводится: where ?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "почему ", "isCorrect": false },
+        { "id": 2, "text": "когда", "isCorrect": false },
+        { "id": 3, "text": "что", "isCorrect": false },
+        { "id": 4, "text": "как", "isCorrect": false },
+        { "id": 5, "text": "где", "isCorrect": true },
+        { "id": 6, "text": "кто", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Как переводится: who ?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "почему ", "isCorrect": false },
+        { "id": 2, "text": "когда", "isCorrect": false },
+        { "id": 3, "text": "что", "isCorrect": false },
+        { "id": 4, "text": "как", "isCorrect": false },
+        { "id": 5, "text": "где", "isCorrect": false },
+        { "id": 6, "text": "кто", "isCorrect": true }
+      ]
+    }
+  ],
+  "pronouns": [
+    {
+      "id": 1,
+      "text": "Как переводится: them ?",
+      "hasOptions": false,
+      "answer": "им"
+    },
+    {
+      "id": 2,
+      "text": "Как переводится: their ?",
+      "hasOptions": false,
+      "answer": "их"
+    },
+    {
+      "id": 3,
+      "text": "Как переводится: our ?",
+      "hasOptions": false,
+      "answer": "наш"
+    },
+    {
+      "id": 4,
+      "text": "Как переводится: her ?",
+      "hasOptions": false,
+      "answer": "её"
+    },
+    {
+      "id": 5,
+      "text": "Как переводится: his ?",
+      "hasOptions": false,
+      "answer": "его"
+    },
+    {
+      "id": 6,
+      "text": "Как переводится: its ?",
+      "hasOptions": false,
+      "answer": "свой"
+    }
+  ],
+  "otherwords": [
+    {
+      "id": 1,
+      "text": "Как переводится: responsibility ?",
+      "hasOptions": false,
+      "answer": "ответственный"
+    },
+    {
+      "id": 2,
+      "text": "Как переводится: that you do ?",
+      "hasOptions": false,
+      "answer": "что ты делаешь"
+    },
+    {
+      "id": 3,
+      "text": "Как переводится: override ?",
+      "hasOptions": false,
+      "answer": "переопределить"
+    },
+    {
+      "id": 4,
+      "text": "Как переводится: greatest ?",
+      "hasOptions": false,
+      "answer": "самый большой"
+    },
+    {
+      "id": 5,
+      "text": "Как переводится: enough ?",
+      "hasOptions": false,
+      "answer": "достаточно"
+    },
+    {
+      "id": 6,
+      "text": "Как переводится: another ?",
+      "hasOptions": false,
+      "answer": "ещё один"
+    },
+    {
+      "id": 7,
+      "text": "Как переводится: own ?",
+      "hasOptions": false,
+      "answer": "собственный"
+    },
+    {
+      "id": 8,
+      "text": "Как переводится: felt ?",
+      "hasOptions": false,
+      "answer": "чувствовал"
+    },
+    {
+      "id": 9,
+      "text": "Как переводится: should ?",
+      "hasOptions": false,
+      "answer": "следует"
+    },
+    {
+      "id": 10,
+      "text": "Как переводится: deep ?",
+      "hasOptions": false,
+      "answer": "глубокий"
+    },
+    {
+      "id": 11,
+      "text": "Как переводится: which ?",
+      "hasOptions": false,
+      "answer": "который"
+    },
+    {
+      "id": 12,
+      "text": "Как переводится: will ?",
+      "hasOptions": false,
+      "answer": "будет"
+    },
+    {
+      "id": 13,
+      "text": "Как переводится: cloud ?",
+      "hasOptions": false,
+      "answer": "облако"
+    },
+    {
+      "id": 14,
+      "text": "Как переводится: pick ?",
+      "hasOptions": false,
+      "answer": "выбрать"
+    },
+    {
+      "id": 15,
+      "text": "Как переводится: could ?",
+      "hasOptions": false,
+      "answer": "мог бы"
+    },
+    {
+      "id": 16,
+      "text": "Как переводится: breath ?",
+      "hasOptions": false,
+      "answer": "вздох"
+    },
+    {
+      "id": 17,
+      "text": "Как переводится: outfit ?",
+      "hasOptions": false,
+      "answer": "наряд"
+    },
+    {
+      "id": 18,
+      "text": "Как переводится: were ?",
+      "hasOptions": false,
+      "answer": "были"
+    },
+    {
+      "id": 19,
+      "text": "Как переводится: find ?",
+      "hasOptions": false,
+      "answer": "найти"
+    },
+    {
+      "id": 20,
+      "text": "Как переводится: can ?",
+      "hasOptions": false,
+      "answer": "могу"
+    },
+    {
+      "id": 21,
+      "text": "Как переводится: until ?",
+      "hasOptions": false,
+      "answer": "до"
+    },
+    {
+      "id": 22,
+      "text": "Как переводится: devastating ?",
+      "hasOptions": false,
+      "answer": "разрушительный"
+    },
+    {
+      "id": 23,
+      "text": "Как переводится: melee ?",
+      "hasOptions": false,
+      "answer": "рукопашный бой"
+    },
+    {
+      "id": 24,
+      "text": "Как переводится: powerful ?",
+      "hasOptions": false,
+      "answer": "мощный"
+    },
+    {
+      "id": 25,
+      "text": "Как переводится: staying ?",
+      "hasOptions": false,
+      "answer": "оставаться"
+    },
+    {
+      "id": 26,
+      "text": "Как переводится: evader ?",
+      "hasOptions": false,
+      "answer": "уклонист"
+    },
+    {
+      "id": 27,
+      "text": "Как переводится: tank ?",
+      "hasOptions": false,
+      "answer": "резервуар"
+    },
+    {
+      "id": 28,
+      "text": "Как переводится: enemies ?",
+      "hasOptions": false,
+      "answer": "враги"
+    },
+    {
+      "id": 29,
+      "text": "Как переводится: choice ?",
+      "hasOptions": false,
+      "answer": "выбор"
+    },
+    {
+      "id": 30,
+      "text": "Как переводится: away ?",
+      "hasOptions": false,
+      "answer": "прочь"
+    },
+    {
+      "id": 31,
+      "text": "Как переводится: leap ?",
+      "hasOptions": false,
+      "answer": "скачок"
+    },
+    {
+      "id": 32,
+      "text": "Как переводится: poison ?",
+      "hasOptions": false,
+      "answer": "яд"
+    },
+    {
+      "id": 33,
+      "text": "Как переводится: anywhere ?",
+      "hasOptions": false,
+      "answer": "где угодно"
+    },
+    {
+      "id": 34,
+      "text": "Как переводится: especially ?",
+      "hasOptions": false,
+      "answer": "особенно"
+    },
+    {
+      "id": 35,
+      "text": "Как переводится: mostly ?",
+      "hasOptions": false,
+      "answer": "в основном"
+    },
+    {
+      "id": 36,
+      "text": "Как переводится: champs ?",
+      "hasOptions": false,
+      "answer": "чемпионы"
+    },
+    {
+      "id": 37,
+      "text": "Как переводится: put ?",
+      "hasOptions": false,
+      "answer": "разместить"
+    },
+    {
+      "id": 38,
+      "text": "Как переводится: spare ?",
+      "hasOptions": false,
+      "answer": "запасной"
+    },
+    {
+      "id": 39,
+      "text": "Как переводится: made ?",
+      "hasOptions": false,
+      "answer": "сделал"
+    },
+    {
+      "id": 40,
+      "text": "Как переводится: rare ?",
+      "hasOptions": false,
+      "answer": "редкий"
+    },
+    {
+      "id": 41,
+      "text": "Как переводится: without ?",
+      "hasOptions": false,
+      "answer": "без"
+    },
+    {
+      "id": 42,
+      "text": "Как переводится: wild ?",
+      "hasOptions": false,
+      "answer": "дикий"
+    },
+    {
+      "id": 43,
+      "text": "Как переводится: for ?",
+      "hasOptions": false,
+      "answer": "для"
+    },
+    {
+      "id": 44,
+      "text": "Как переводится: ability ?",
+      "hasOptions": false,
+      "answer": "способность"
+    },
+    {
+      "id": 45,
+      "text": "Как переводится: pesky ?",
+      "hasOptions": false,
+      "answer": "надоедливый"
+    },
+    {
+      "id": 46,
+      "text": "Как переводится: some ?",
+      "hasOptions": false,
+      "answer": "некоторые"
+    },
+    {
+      "id": 47,
+      "text": "Как переводится: gear ?",
+      "hasOptions": false,
+      "answer": "шестерня"
+    },
+    {
+      "id": 48,
+      "text": "Как переводится: missile ?",
+      "hasOptions": false,
+      "answer": "ракета"
+    },
+    {
+      "id": 49,
+      "text": "Как переводится: ahead ?",
+      "hasOptions": false,
+      "answer": "вперед"
+    },
+    {
+      "id": 50,
+      "text": "Как переводится: get ?",
+      "hasOptions": false,
+      "answer": "получить"
+    },
+    {
+      "id": 51,
+      "text": "Как переводится: has ?",
+      "hasOptions": false,
+      "answer": "имеет"
+    },
+    {
+      "id": 52,
+      "text": "Как переводится: shield ?",
+      "hasOptions": false,
+      "answer": "щит"
+    },
+    {
+      "id": 53,
+      "text": "Как переводится: path ?",
+      "hasOptions": false,
+      "answer": "путь"
+    },
+    {
+      "id": 54,
+      "text": "Как переводится: those ?",
+      "hasOptions": false,
+      "answer": "эти"
+    },
+    {
+      "id": 55,
+      "text": "Как переводится: placement ?",
+      "hasOptions": false,
+      "answer": "размещение"
+    },
+    {
+      "id": 56,
+      "text": "Как переводится: deployed ?",
+      "hasOptions": false,
+      "answer": "развернутый"
+    },
+    {
+      "id": 57,
+      "text": "Как переводится: closest ?",
+      "hasOptions": false,
+      "answer": "ближайший"
+    },
+    {
+      "id": 58,
+      "text": "Как переводится: most ?",
+      "hasOptions": false,
+      "answer": "большинство"
+    },
+    {
+      "id": 59,
+      "text": "Как переводится: drag ?",
+      "hasOptions": false,
+      "answer": "перетащить"
+    },
+    {
+      "id": 60,
+      "text": "Как переводится: ever ?",
+      "hasOptions": false,
+      "answer": "когда-либо"
+    },
+    {
+      "id": 61,
+      "text": "Как переводится: they ?",
+      "hasOptions": false,
+      "answer": "они"
+    },
+    {
+      "id": 62,
+      "text": "Как переводится: over ?",
+      "hasOptions": false,
+      "answer": "по"
+    },
+    {
+      "id": 63,
+      "text": "Как переводится: into ?",
+      "hasOptions": false,
+      "answer": "в"
+    },
+    {
+      "id": 64,
+      "text": "Как переводится: headache ?",
+      "hasOptions": false,
+      "answer": "головная боль"
+    },
+    {
+      "id": 65,
+      "text": "Как переводится: tougher ?",
+      "hasOptions": false,
+      "answer": "более жесткий"
+    },
+    {
+      "id": 66,
+      "text": "Как переводится: remember ?",
+      "hasOptions": false,
+      "answer": "помните"
+    },
+    {
+      "id": 67,
+      "text": "Как переводится: soak ?",
+      "hasOptions": false,
+      "answer": "замачивание"
+    },
+    {
+      "id": 68,
+      "text": "Как переводится: clothes ?",
+      "hasOptions": false,
+      "answer": "одежда"
+    },
+    {
+      "id": 69,
+      "text": "Как переводится: weaker ?",
+      "hasOptions": false,
+      "answer": "слабее"
+    },
+    {
+      "id": 70,
+      "text": "Как переводится: always ?",
+      "hasOptions": false,
+      "answer": "всегда"
+    },
+    {
+      "id": 72,
+      "text": "Как переводится: better ?",
+      "hasOptions": false,
+      "answer": "лучше"
+    },
+    {
+      "id": 73,
+      "text": "Как переводится: behind ?",
+      "hasOptions": false,
+      "answer": "за"
+    },
+    {
+      "id": 74,
+      "text": "Как переводится: ones ?",
+      "hasOptions": false,
+      "answer": "те"
+    },
+    {
+      "id": 75,
+      "text": "Как переводится: it ?",
+      "hasOptions": false,
+      "answer": "это"
+    },
+    {
+      "id": 76,
+      "text": "Как переводится: relentlessly ?",
+      "hasOptions": false,
+      "answer": "безжалостно"
+    },
+    {
+      "id": 77,
+      "text": "Как переводится: lethal ?",
+      "hasOptions": false,
+      "answer": "смертельный"
+    },
+    {
+      "id": 78,
+      "text": "Как переводится: chases ?",
+      "hasOptions": false,
+      "answer": "преследует"
+    },
+    {
+      "id": 79,
+      "text": "Как переводится: tinkering ?",
+      "hasOptions": false,
+      "answer": "возится"
+    },
+    {
+      "id": 80,
+      "text": "Как переводится: common ?",
+      "hasOptions": false,
+      "answer": "общий"
+    },
+    {
+      "id": 81,
+      "text": "Как переводится: fragile ?",
+      "hasOptions": false,
+      "answer": "хрупкий"
+    },
+    {
+      "id": 82,
+      "text": "Как переводится: skinned ?",
+      "hasOptions": false,
+      "answer": "шкуры"
+    },
+    {
+      "id": 83,
+      "text": "Как переводится: saw ?",
+      "hasOptions": false,
+      "answer": "смотреть"
+    },
+    {
+      "id": 84,
+      "text": "Как переводится: thin ?",
+      "hasOptions": false,
+      "answer": "тонкий"
+    },
+    {
+      "id": 85,
+      "text": "Как переводится: was ?",
+      "hasOptions": false,
+      "answer": "была"
+    }
+  ]
+}
